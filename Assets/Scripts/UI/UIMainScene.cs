@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class UIMainScene : MonoBehaviour
 {
     public static UIMainScene Instance { get; private set; }
@@ -73,4 +74,10 @@ public class UIMainScene : MonoBehaviour
             InfoPopup.Name.text = content.GetName();
         }
     }
+
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
